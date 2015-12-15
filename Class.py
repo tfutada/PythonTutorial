@@ -1,4 +1,4 @@
-#
+# Class
 class Person:
 
     # Constructor
@@ -9,18 +9,13 @@ class Person:
 
     # Method
     def full_name(self):
-        return "My name is {} {}".format(self.first, self.last)
+        return self.first + " " + self.last
 
+# Create an instance of Person
 david = Person("David", "Fox", 23)
-print(david.full_name())
 
-
-def how_old_are_you(self):
-    return self.age
-
-Person.getAge = how_old_are_you
-print(david.getAge())
-
+print("My first name is %s" % david.first)
+print("My full name is %s" % david.full_name())
 
 
 
