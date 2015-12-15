@@ -1,7 +1,5 @@
+#
 class Person:
-    first = ""
-    last = ""
-    age = 0
 
     # Constructor
     def __init__(self, first, last, age):

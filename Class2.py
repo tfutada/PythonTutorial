@@ -1,7 +1,8 @@
 class Person:
-    first = ""
-    last = ""
 
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
 
 # Return a full name
 def full_name(self):
@@ -10,10 +11,7 @@ def full_name(self):
 # Add the method
 Person.get_full_name = full_name
 
-
-david = Person()
-david.first = "David"
-david.last = "Jones"
+david = Person("David", "Jones")
 
 print(david.get_full_name())
 
