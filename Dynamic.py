@@ -8,17 +8,24 @@ class Person:
 def full_name(self):
     return self.first + " " + self.last
 
-# Add the method
+# Add the method dynamically.
 Person.get_full_name = full_name
 
 david = Person("David", "Jones")
 
 print(david.get_full_name())
 
-Person.get_full_name = print
+# Change it.
+#Person.get_full_name = print
 
-david.get_full_name("Hello")
+#david.get_full_name("Hello")
 
-print(dir(Person))
+# Wrap it
+def wrap(f):
+    def wrapper(self):
+        return "I am " + f(self) + "."
+    return wrapper
 
+Person.get_full_name = wrap(Person.get_full_name)
 
+print(david.get_full_name())
