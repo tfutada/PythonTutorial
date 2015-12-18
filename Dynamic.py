@@ -16,16 +16,16 @@ david = Person("David", "Jones")
 print(david.get_full_name())
 
 # Change it.
-#Person.get_full_name = print
+Person.get_full_name = print
 
-#david.get_full_name("Hello")
+david.get_full_name("Hello")
 
 # Wrap it
-def wrap(f):
-    def wrapper(self):
-        return "I am " + f(self) + "."
-    return wrapper
-
-Person.get_full_name = wrap(Person.get_full_name)
-
-print(david.get_full_name())
+# def wrap(f):
+#     def wrapper(self):
+#         return "I am " + f(self) + "."
+#     return wrapper
+#
+# Person.get_full_name = wrap(Person.get_full_name)
+#
+# print(david.get_full_name())

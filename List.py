@@ -6,7 +6,7 @@ country = ["Japan", "Vietnam", "US", 5]
 for val in country:
     print("Country: %s" % val)
 
-#
+# Dictionary
 person = {
     "David": 32,
     "Tom": 18,
@@ -17,6 +17,7 @@ adults = []
 kids = []
 
 # items() returns a list of tuples(k,v)
+# [("David", 32), ("Tom", 18), ("Bob", 27)]
 for k, v in person.items():
     if v > 20:
         adults.append(k)
@@ -25,12 +26,6 @@ for k, v in person.items():
 
 print("adults: %s" % adults)
 print("kids: %s" % kids)
-
-
-
-
-
-
 
 # Tuple
 
