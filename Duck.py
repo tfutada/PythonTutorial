@@ -11,8 +11,9 @@ class Computer:
     def __init__(self, brand):
         self.brand = brand
 
+
 def what_your_name(you):
-    print(you.full_name()) # dynamic typing
+    print(you.full_name())  # dynamic typing
 
 david = Person("David", "Jobs")
 mac = Computer("Mac book air")

@@ -1,5 +1,3 @@
-#
-
 # List
 country = ["Japan", "Vietnam", "US", 5]
 
@@ -43,8 +41,3 @@ python = set(["Interpreter", "Duck Typing", "OOP"])
 
 print("both of them have: %s" % go.intersection(python))
 print("either of them have: %s" % go.symmetric_difference(python))
-
-
-
-
-
