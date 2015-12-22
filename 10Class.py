@@ -1,4 +1,3 @@
-# Class
 class Person:
 
     # Constructor
