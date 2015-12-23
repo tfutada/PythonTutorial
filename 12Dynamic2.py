@@ -15,8 +15,13 @@ david = Person("David", "Jones")
 
 print(david.get_full_name())
 
-# Change it.
-Person.get_full_name = print
 
-david.get_full_name("Hello")
+# Decorate it
+def wrap(f):
+    def new_method(self):
+        return "I am " + f(self) + "."
+    return new_method
 
+Person.get_full_name = wrap(Person.get_full_name)
+
+print(david.get_full_name())

@@ -1,6 +1,3 @@
-#
-
-
 def gen1():
     yield 5
     yield 3
@@ -23,7 +20,7 @@ for x in combinations("ABC", 2):
 for x in permutations("ABC", 2):
     print("P:", x)
 
-for x in repeat(3, 5000):
+for x in repeat(3, 500):
     print(x)
 
 
